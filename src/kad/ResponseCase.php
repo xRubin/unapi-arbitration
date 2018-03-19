@@ -110,4 +110,12 @@ class ResponseCase
         $this->date = $date;
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getLink(): string
+    {
+        return 'https://kad.arbitr.ru/Card/' . $this->getId();
+    }
 }
